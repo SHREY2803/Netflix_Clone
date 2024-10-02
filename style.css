@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: black;
+}
+.main {
+    background-image: url(assets/images/background.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+}
+.main .box {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1));
+}
+nav {
+    margin: auto;
+    max-width: 97vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.nf-logo {
+    margin-left: 170px;
+    position: relative;
+    width: 155px;
+    z-index: 10;
+}
+nav .buttons {
+    margin-right: 195px;
+    display: flex;
+    gap: 10px;
+}
+nav .translate_icon {
+    top: 34px;
+    right: 420px;
+    position: absolute;
+    z-index: 10;
+}
+nav #lang {
+    background: transparent;
+    height: 35px;
+    width: 140px;
+    z-index: 13;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 4px;
+    font-weight: 600;   
+    font-size: 16px;
+    color: white;
+}
+nav #lang option {
+    color: black;
+}
+nav .buttons .sign-in {
+    border: none;
+    border-radius: 4px;
+    width: 82px;
+    height: 35px;
+    background-color: red;
+    z-index: 10;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+nav .buttons .sign-in:hover {
+    background-color: rgb(193, 17, 25);
+}
+.header-content {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    text-align: center;
+    position: relative;
+}
+.first-content {
+
+    font-size: 48px;
+    font-weight: 900;
+}
+.second-content {
+    font-size: 30px;
+    font-weight: 400;
+}
+.third-content {
+    font-size: 25px;
+    font-weight: 400;
+}
+.email-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.email-form .email-btn {
+    padding: 12px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid grey;
+    color: white;
+    width: 320px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.email-form .start-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+.email-form .start-btn:hover {
+    background-color: rgb(193, 17, 25);
+}
+.email-form .start-btn .right-arrow-img {
+    margin-left: 15px;
+}
+.seperation {
+    margin-top: 7px;
+    width: 100%;
+    height: 11px;
+    background-color: rgba(46, 44, 44);
+}
+.first-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+}
+.enjoy {
+    font-size: 55px;
+    font-weight: 900;
+    
+}
+.watch-smart {
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+    
+}
+.watch-smart .one,
+.watch-smart .two {
+    font-size: 28px;
+}
+.desktop-img {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.desktop-img #screen {
+    width: 80%;
+    z-index: 10;
+}
+.desktop-img #sample-video {
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    bottom: 15%;
+}
+.seperation-second {
+    width: 100%;
+    height: 11px;
+    background-color: rgba(46, 44, 44);
+}
+.second-section {
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+.new-girl-img img {
+    width: 80%;
+    margin-bottom: 77px;
+}
+.download-shows {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.download-shows .offline {
+    font-size: 55px;
+    font-weight: 900;
+}
+.download-shows .favourites {
+    font-size: 28px;
+}
+.seperation-third{
+    width: 100%;
+    height: 11px;
+    background-color: rgba(46, 44, 44);
+}
+.third-section{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.watch-content{
+    display: flex;
+    flex-direction: column;
+
+}
+.watch-content .watch{
+    font-size: 55px;
+    font-weight: 900;
+    color: white;
+}
+.watch-content .stream{
+    color: white;
+    font-size: 28px;
+}
+.watch-content .phone{
+    color: white;
+    font-size: 28px;
+}
+.apple-monitor{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.app-moni{
+    z-index: 10;
+    width: 100%;
+    max-width: 600px; 
+}
+.apple-monitor .saif{
+    position: absolute;
+    width: 65%;
+    left: 16%;
+    top: 33%; 
+    transform: translateY(-50%); 
+}
+.fourth-section{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.kids-content{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.kids-content .create{
+    margin-bottom: 10px;
+    font-size: 55px;
+    font-weight: 900;
+}
+.kids-content .for-kids{
+    font-size: 28px;
+}
+.faq-section{
+    min-height: 100vh;
+    padding: 34px;
+
+}
+.faq-section .topic{
+    text-align: center;
+    color: white;
+    font-size: 55px;
+    font-weight: 900;
+}
+.question-box:hover {
+    background-color: #414141;
+    color: white;
+    cursor: pointer;
+}
+
+.question-box svg {
+    position: relative;
+    filter: invert(1);
+    width: 65px;
+    height: 42px;
+    color: white;
+    right: 0;
+
+}
+.question-box{
+    transition: all 1s ease-out;
+    font-size: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 73vw;
+    margin: 8px auto;
+    cursor: pointer;
+    height: 40px;
+}
+
+.first-question{
+    margin-top:35px;
+}
+.ready-to-watch{
+    font-size: 22px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+.form-bottom{
+    margin-bottom:25px
+}
+footer{
+    color: white;
+    margin: auto;
+    min-height: 40vh;;
+    max-width: 60vw;
+    padding: 60px;
+}
+.footer-questions{
+    padding: 34px 0;
+}
+
+.footer-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    gap: 50px;
+}
+.footer-main a{
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+.footer-item{
+    display: flex;
+    flex-direction:column;
+    gap: 23px;
+}
+.footer-lang{
+    background: transparent;
+    height: 35px;
+    width: 140px;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+}
+.footer-lang option{
+    color: black;
+}
+
+@media screen and (max-width: 1320px) {
+    .second-section {
+        flex-direction: column-reverse;
+    }
+    .third-section{
+        flex-direction: column;
+        gap: 30px; 
+    }
+    .fourth-section {
+        flex-direction: column-reverse;
+    }
+    .translate_icon {
+        right: 100px; 
+    }
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+@media screen and (max-width: 800px) {
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .nf-logo {
+        margin-left: 0;
+    }
+    nav .buttons {
+        margin: 0;
+    }
+    nav .translate_icon {
+        top: -4px;
+        right: -36px; 
+        position: relative; 
+        margin-top: 10px;   
+    }
+
+    .email-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 13px;
+    }
+
+    .email-form .email-btn {
+        width: auto;
+    }
+    .first-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .enjoy{
+        text-align: center;
+    }
+    .watch-smart .one,
+    .watch-smart .two {
+        text-align: center;
+    }
+    .desktop-img {
+        margin-top: 20px;
+    }
+    .second-section {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .second-section .download-shows {
+        order: -1;
+    }
+    .second-section .new-girl-img {
+        order: 1;
+    }
+    .new-girl-img img {
+        width: 100%;
+    }
+    .download-shows .offline, .download-shows .favourites{
+        text-align: center;
+    }
+    .third-section{
+        flex-direction: column;
+    }
+    .watch-content .watch,
+    .watch-content .stream,
+    .watch-content .phone{
+        text-align: center;
+        gap: 20px; 
+
+    }
+    .apple-monitor .app-mini{
+        width: 100%;
+    }
+    .kids-content .create, .kids-content .for-kids{
+        text-align: center;
+    }
+    .kids .strong-kid{
+        width: 100%;
+    }
+    .faq-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .faq-section .topic{
+        text-align: center;
+    }
+    .question-box{
+        text-align: left;
+    }
+    
+    .footer-questions{
+        text-align: center;
+    }
+    .footer-main{
+        grid-template-columns: 1fr ;
+    }
+    .footer-lang{
+        width: auto;
+    }
+
+}
